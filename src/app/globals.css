@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #ffffff;
+  --black: #171717;
+  --gradient-bg: linear-gradient(90deg, rgba(7,23,31,0.8995973389355743) 0%, rgba(38,46,126,0.9724264705882353) 39%, rgba(17,70,182,1) 100%);
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
