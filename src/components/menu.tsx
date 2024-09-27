@@ -1,3 +1,4 @@
+import { ROUTES } from "@/constants/routes";
 import Link from "next/link";
 
 
@@ -13,12 +14,12 @@ export const Menu: React.FC<IMenu> = ({op1,op2,op3,op4}) =>
     {
         return (   
             <nav 
-            className="flex flex-row justify-between font-roboto px-20 h-12 items-center bg-teal-400"
+            className="flex flex-row justify-between font-roboto px-20 h-12 items-center bg-red-700 w-full"
             >
-                <p className="bg-teal-600">{op1}</p>
-                <p className="bg-teal-600">{op2}</p>
-                <p className="bg-teal-600">{op3}</p>
-                <p className="bg-teal-600">{op4}</p>
+                <Link href={ROUTES.home} className="bg-red-600 p-1 rounded-lg border-solid border-stone-950" >{op1}</Link>
+                <Link href={ROUTES.maths} className="bg-red-600 p-1 rounded-lg border-solid border-stone-950">{op2}</Link>
+                <p className="bg-red-600 p-1 rounded-lg border-solid border-stone-950">{op3}</p>
+                <p className="bg-red-600 p-1 rounded-lg border-solid border-stone-950">{op4}</p>
             </nav>
         )
     }

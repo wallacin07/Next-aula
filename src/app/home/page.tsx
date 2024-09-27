@@ -1,5 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { Menu } from "@/components/menu";
+import { Footer } from "@/components/footer";
 
 
 export const metadata: Metadata = {
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Menu op1="Page 1" op2="Page 2" op3="Page 3" op4="Page 4"></Menu>
       <main className="font-sofadiOne flex flex-col justify-center items-center h-full p-10">
         <h1 className="text-6xl my-20 ">Bem vindo</h1>
         <section className=" flex flex-col bg-slate-400 p-5 rounded-xl w-2/5 ">
@@ -26,7 +29,7 @@ export default function Home() {
 
         </section>
       </main>
-
+      <Footer></Footer>
     </>
   );
 }

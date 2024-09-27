@@ -1,8 +1,6 @@
 import { Sofadi_One, Roboto } from "next/font/google";
-import "./globals.css";
-import { Footer } from "@/components/footer";
-import { Menu } from "@/components/menu";
-import bg from "../assets/bg.png"
+import "../globals.css";
+
 
 const roboto = Roboto({
   weight: ["400","700"],
@@ -30,9 +28,9 @@ export default function RootLayout({
       <body
       className={`${sofadiOne.variable} ${roboto.variable} antialiased`}
             >
-        <Menu op1="Page 1" op2="Page 2" op3="Page 3" op4="Page 4"></Menu>
+        
         {children}
-        <Footer></Footer>
+        
       </body>
     </html>
   );
