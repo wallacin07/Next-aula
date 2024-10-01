@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-      className={`${sofadiOne.variable} ${roboto.variable} antialiased`}
+      className={` h-screen flex flex-col antialiased`}
             >
         
         {children}
