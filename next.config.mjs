@@ -9,7 +9,11 @@ const nextConfig = {
                 {
                     source:"/matematica",
                     destination: "/maths"
-                    }
+                    },
+                {
+                    source:"/funcaoGeral",
+                    destination: "/generalFunction"
+                }
             ]    
         
     }

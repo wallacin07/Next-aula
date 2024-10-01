@@ -67,7 +67,7 @@ const Maths: React.FC = () => {
         console.log(operacao)
         return (
             <>
-            <Menu op1="Page 1" op2="Page 2" op3="Page 3" op4="Page 4"></Menu>
+            <Menu op1="Home" op2="Math" op3="General Functions"></Menu>
             
         <div className="h-full w-full items-center justify-center flex flex-col">
 

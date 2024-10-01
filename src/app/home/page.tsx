@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Menu } from "@/components/menu";
 import { Footer } from "@/components/footer";
 
+import bg from "../../assets/bg.png"
+
 
 export const metadata: Metadata = {
   title: "Next App",
@@ -12,22 +14,58 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Menu op1="Page 1" op2="Page 2" op3="Page 3" op4="Page 4"></Menu>
+      <Menu op1="Home" op2="Math" op3="General Functions"></Menu>
       <main className="font-sofadiOne flex flex-col justify-center items-center h-full p-10">
-        <h1 className="text-6xl my-20 ">Bem vindo</h1>
-        <section className=" flex flex-col bg-slate-400 p-5 rounded-xl w-2/5 ">
-            <h2 className="text-large w-full text-center mb-5">Login</h2>
 
-            <h4 className="">Usuario</h4>
-            <input type="text" placeholder="Insira seu nome aqui" className="  border-2 border-solid border-slate-500 rounded-xl px-1"/>
-            <h4>Data de Nascimento</h4>
-            <input type="date" placeholder="" className="text-slate-600  border-2 border-solid border-slate-500 rounded-xl px-1" />
+<div className="h-full w-full">
 
-            <h4>Senha</h4>
-            <input type="password"  placeholder="Insira sua senha aqui" className=" border-2 border-solid border-slate-500 rounded-xl px-1"/>
-            <button type="button" className="border-gray-600 bg-zinc-300 rounded-xl my-2">Sign Up</button>
+    {/* card */}
+    <div className="h-96 w-56 rounded-xl">
+      {/* header */}
+      <div className="h-2/5 w-full overflow-hidden">
+        <Image src={bg} alt={"sla"} className="h-full w-full"></Image>
+      </div>
 
-        </section>
+      {/* Body */}
+      <div className="h-2/5 w-full">
+          <p></p>
+          <p></p>
+
+      </div>
+
+    {/* footer */}
+      <div className="h-1/5 w-full">
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+      </div>
+
+    </div>
+
+
+
+</div>
+
+
+{/* 
+
+
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> */}
+
+
+
       </main>
       <Footer></Footer>
     </>
