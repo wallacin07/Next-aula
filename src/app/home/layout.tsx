@@ -1,20 +1,5 @@
-import { Sofadi_One, Roboto } from "next/font/google";
 import "../globals.css";
-
-
-const roboto = Roboto({
-  weight: ["400","700"],
-  style: "normal",
-  variable: "--roboto",
-  subsets: ["latin"]
-})
-
-const sofadiOne = Sofadi_One({
-  weight: ["400"],
-  style: "normal",
-  variable: "--sofadi-one",
-  subsets: ["latin"]
-})
+import { Menu } from "@/components/menu";
 
 
 
@@ -25,12 +10,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      className={` h-screen flex flex-col antialiased`}
-            >
-        
+      <body className={`min-h-screen h-auto  antialiased bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...`}>
+          <Menu op1="Home" op2="Math" op3="General Functions"/>
+        <div className="flex justify-center items-center h-full">
         {children}
-        
+        </div>
       </body>
     </html>
   );
