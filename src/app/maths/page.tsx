@@ -69,32 +69,34 @@ const Maths: React.FC = () => {
             <>
             <Menu op1="Home" op2="Math" op3="General Functions"></Menu>
             
-        <div className="h-full w-full items-center justify-center flex flex-col">
+        <div className="h-full w-full flex justify-center items-center">
+            <div className="w-4/6 h-80 flex  flex-col shadow-2xl bg-gray-100 rounded-lg border-gray-950 border-solid border-[1px]">
 
-
-            <h1>use client com controle de estado</h1>
-            <div>
-                <label htmlFor="n1">Numero 1</label>
-                <input type="text" id="n1" value={numero1} onChange={(e) => setNumero1(e.target.value)}   className="border-solid border-2 border-indigo-600 mx-2 rounded-xl px-2"/>
+                    <div className="flex justify-center items-center my-5">
+                        <label htmlFor="n1">Numero 1</label>
+                        <input type="text" id="n1" value={numero1} onChange={(e) => setNumero1(e.target.value)}   className="border-solid border-[1px] text-center border-indigo-600 mx-2 rounded-xl px-2"/>
+                    </div>
+                    <Select value={operacao} name="status" aria-label="Project status" className="my-1 bg-slate-100 text-center px-4" onChange={(e) => setOperacao(e.target.value)}>
+                        <option value="+" >+</option>
+                        <option value="-">-</option>
+                        <option value="*">x</option>
+                        <option value="/">÷</option>
+                    </Select>
+                <div className="flex justify-center items-center my-5">
+                    <label htmlFor="n2">Numero 2</label>
+                    <input type="text" value={numero2} id="n2" className="border-solid border-[1px] border-indigo-600 mx-2 text-center rounded-xl px-2" onChange={(e) => setNumero2(e.target.value)} />
                 </div>
-            <div>
-            <label htmlFor="n2">Numero 2</label>
-            <input type="text" value={numero2} id="n2" className="border-solid border-2 border-indigo-600 mx-2 rounded-xl px-2" onChange={(e) => setNumero2(e.target.value)} />
-            </div>
 
 
-            <Select value={operacao} name="status" aria-label="Project status" className="my-3" onChange={(e) => setOperacao(e.target.value)}>
-                <option value="+" >adicao</option>
-                <option value="-">Subtracao</option>
-                <option value="*">Multiplicacao</option>
-                <option value="/">divisao</option>
-            </Select>
 
 
-            <div>
-                <h2></h2>
-                {!isNaN(respSoma ?? NaN) ? respSoma: msgError}
-                <button  className="border-solid border-2 border-indigo-600 mx-2 w-20 h-8" onClick={handleOperacao}>Some</button>
+                <div className="flex flex-col justify-center items-center">
+                    <button  className="border-solid border-2 border-gray-150 mx-2 w-11/12 rounded-lg shadow-xl h-8" onClick={handleOperacao}>Some</button>
+                    <h2 className="my-8 text-lg">{!isNaN(respSoma ?? NaN) ? respSoma: msgError}</h2>
+                </div>
+                    
+
+
             </div>
         </div>
         <Footer></Footer>
