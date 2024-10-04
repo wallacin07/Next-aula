@@ -13,6 +13,10 @@ const nextConfig = {
                 {
                     source:"/funcaoGeral",
                     destination: "/generalFunction"
+                },
+                {
+                    source:"/pagina-com-fetch",
+                    destination:"/fetch-page"
                 }
             ]    
         

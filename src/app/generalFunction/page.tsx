@@ -44,7 +44,7 @@ const generalFunction: React.FC = () => {
 
       return (
           <>
-          <Menu op1="Home" op2="Math" op3="General Functions"></Menu>
+          <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo"></Menu>
 
           <div className="h-full w-full items-center justify-center flex flex-col">
 

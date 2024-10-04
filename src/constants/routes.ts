@@ -1,5 +1,6 @@
 export enum ROUTES {
     home = "/",
     maths = "/maths",
-    generalFunction = "/funcaoGeral"
+    generalFunction = "/funcaoGeral",
+    fetchNativo = "/pagina-com-fetch"
 }

@@ -67,7 +67,7 @@ const Maths: React.FC = () => {
         console.log(operacao)
         return (
             <>
-            <Menu op1="Home" op2="Math" op3="General Functions"></Menu>
+            <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo"></Menu>
             
         <div className="h-full w-full flex justify-center items-center">
             <div className="w-4/6 h-80 flex  flex-col shadow-2xl bg-gray-100 rounded-lg border-gray-950 border-solid border-[1px]">
@@ -91,7 +91,7 @@ const Maths: React.FC = () => {
 
 
                 <div className="flex flex-col justify-center items-center">
-                    <button  className="border-solid border-2 border-gray-150 mx-2 w-11/12 rounded-lg shadow-xl h-8" onClick={handleOperacao}>Some</button>
+                    <button  className="border-solid border-2 border-gray-150 mx-2 w-11/12 rounded-lg shadow-xl h-8" onClick={handleOperacao}>Faça a operação</button>
                     <h2 className="my-8 text-lg">{!isNaN(respSoma ?? NaN) ? respSoma: msgError}</h2>
                 </div>
                     
