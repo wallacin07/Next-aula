@@ -67,7 +67,7 @@ const Maths: React.FC = () => {
         console.log(operacao)
         return (
             <>
-            <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo"></Menu>
+            <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo" op5="AxiosPage" op6="ServerPage"></Menu>
             
         <div className="h-full w-full flex justify-center items-center">
             <div className="w-4/6 h-80 flex  flex-col shadow-2xl bg-gray-100 rounded-lg border-gray-950 border-solid border-[1px]">

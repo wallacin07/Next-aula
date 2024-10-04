@@ -10,11 +10,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-h-screen h-auto  antialiased bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...`}>
+      <body className={`min-h-screen h-auto  antialiased `}>
           <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo" op5="AxiosPage" op6="ServerPage"/>
-        <div className="flex justify-center items-center h-full">
         {children}
-        </div>
       </body>
     </html>
   );

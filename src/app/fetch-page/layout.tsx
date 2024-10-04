@@ -16,8 +16,10 @@ export default function RootLayout({
     <html lang="en" >
        
       <body className="h-screen antialiased">
-      <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo"/>
-      {children}
+      <Menu op1="Home" op2="Math" op3="General Functions" op4="FetchNativo" op5="AxiosPage" op6="ServerPage"/>
+      <div className="flex  h-full flex-wrap gap-4 justify-center items-center my-4">
+        {children}
+      </div>
       
       </body>
 
